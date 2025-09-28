@@ -7,7 +7,7 @@
     src: url('Fonts/font_latin-webfont.724c3a88.woff2') format('woff2');
 }
 .mindustry{
-    font-family: "mindustry", sans-serif;
+    font-family: "Mindustry", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -171,31 +171,4 @@ button.a:hover{
     padding: 10px 30px;
     background-color:  rgb(15, 15, 15);
     border-bottom: 7px solid rgb(44, 43, 43);
-}
-a.button {
-    text-decoration: none;
-    text-align: center;
-    border: none;
-    font-size: 16px;
-    padding: 14px;
-    margin: 10px;
-    margin-left: 0px;
-    cursor: pointer;
-    color: white;
-    background-color: #222222;
-    transition-duration: 0.3s;
-    border-bottom: 4px #444444 solid;
-}
-
-a.icon span {
-    padding-left: 36px;
-    padding-bottom: 30px;
-    padding-top: 2px;
-    background-size: 28px !important;
-    background-repeat: no-repeat !important;
-}
-
-a.button:hover {
-    background-color: gray;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.4);
 }
