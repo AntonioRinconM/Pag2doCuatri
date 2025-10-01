@@ -72,45 +72,31 @@ nav.todolodemas{
 /* =========================================
 FOOTER
 ========================================= */
-footer {
-    display:flex;
-    width: 100%;       
-    background-color: firebrick;
-    color: #fff;
-    text-align: center;
-    padding: 0;
-}
+
 /* =========================================
-PREVIEWS
+COLUMNAS
 ========================================= */
-p.preview{
-    font-weight: 400;
+.page-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
 }
 
-img.preview{
-    border: 1px solid black;
-    width: 100%;
-    height: 100%;
+.columna {
+    background: rgba(20, 20, 20, 0.9); 
+    border: 1px solid #333;
+    padding: 20px;
+    color: #eee;
+    overflow: fixed; 
+    transition: transform 0.3s;
 }
 
-div.preview{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.columna:hover {
+    transform: scale(1.05);
+    border-color: rgb(255, 211, 130);
+    box-shadow: 0 0 15px rgb(255, 211, 130);
 }
 
-.preview-item{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(49, 49, 49);
-    border: none;
-    border-bottom: 7px solid rgb(81, 78, 78);
-    border-radius: 0px;
-    margin:10px;
-    width: 75%;
-    height: 300px;
-    align-items: center;
-}
 
 /* =========================================
 MENÚ GRID
@@ -199,11 +185,12 @@ button {
 }
 
 button:hover {
-    padding: 6px 150px;
-    background-color: rgb(40, 40, 40);
+    transform: scale(1.05);
+    border-color: rgb(255, 211, 130);
+    box-shadow: 0 0 15px rgb(255, 211, 130);
 }
 button:active {
     background-color: rgb(20, 20, 20);
     transform: 
-        scale(2.98);        
+    scale(1.25);
 }
