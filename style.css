@@ -254,6 +254,7 @@ footer ul > li.github::before{
 .page-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 15px;
 }
 
@@ -263,17 +264,20 @@ footer ul > li.github::before{
     background: rgba(20, 20, 20, 0.9);
     border: 1px solid #333;
     padding: 20px;
-    height: 400px;
     color: whitesmoke;
     overflow: clip;
     transition: all 0.4s;
     align-items: center;
 }
-
+.page-columns > :nth-child(2) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
 .columna>p {
     all: unset;
     font-size: 1.4em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .columna>p>span {
@@ -299,79 +303,46 @@ footer ul > li.github::before{
 
 
 /* =========================================
-!               MENÚ GRID
+!               MENÚ (titulo y botones)
 ========================================= */
-.elverdaderomenu{
+
+.menu{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 40px;
-    gap: 170px;
-}
-.elverdaderomenu > .titulo{
-    margin-left: 90px;
-}
-.elverdaderomenu > .botones{
-    display:flex;
     flex-direction: column;
-    gap: 20px;
-}
-.menu {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-}
-
-.menu-item {
-    font-size: 1.8em;
-    color: whitesmoke;
-    display: inline-block;
-    place-items: center;
-}
-.menu > .titulo {
-    position: sticky;
-    display: grid;
-    grid-column: 1/ 3;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: black;
+    height: 200px;
+    margin: 130px 0 90px 0;
 }
-
-div.discord {
+.menu .titulo img{
+    width: 100%;
+    height: auto;
+}
+.menu .botones{
     display: flex;
-    justify-content: end;
-    padding-right: 20px;
+    gap: 15px;
 }
-
-div.adquirir {
-    display: flex;
-    justify-content: start;
-}
-
 /* ? Botonones */
-.elverdaderomenu a{
+.menu a{
     all: unset;
     background-color: rgb(25, 25, 25);
     color: whitesmoke;
     border: 2px solid rgb(60, 60, 60);
     outline: 3px solid rgb(15, 15, 15);
-    padding: 6px 26px;
-    font-size: 1.1em;
+    padding: 0px 26px;
+    font-size: 2em;
     cursor: pointer;
     transition: all 0.2s;
     width: 200px;
+    height: 50px;
     text-align: center;
 }
-
-.elverdaderomenu a:hover {
+.menu a:hover {
     transform: scale(1.05);
     border-color: rgb(255, 211, 130);
     box-shadow: 0 0 15px rgb(255, 211, 130);
 }
-
-.elverdaderomenu a:active {
+.menu a:active {
     background-color: rgb(20, 20, 20);
     transform:
         scale(0.97);
