@@ -156,6 +156,10 @@ footer{
     box-shadow: 0 0 10px rgb(255, 211, 130);
     width: 100%;
 }
+.redes{
+    display:block;
+    margin-left: 200px;
+}
 footer h3{
     all: unset;
     font-size: 1.6em;
@@ -165,25 +169,15 @@ footer a{
     all:unset;
     transition: all 0.3s;
 }
-footer .contacto-redes{
-    display: flex;
-    justify-content: space-around;
-
-}
-footer .foros {
+footer {
     width: 100%;
     margin-left: 0;
     color:grey;
 }
-.foros ul{
+footer ul{
     list-style: none;
 }
-.foros > ul li{
-    margin-bottom: 8px;
-    margin-left: 10px;
-    font-size: 1.1em;
-    transition: all 0.3s;
-}
+
 footer a:hover{
     color: rgb(255, 211, 130);
     cursor: pointer;
@@ -195,7 +189,7 @@ footer ul > li:has(a:hover)::before{
 footer ul > li.trello::before{
     content: "";
     display: inline-block;
-    background-image: url("Imagenes/index/trello.png");
+    background-image: url("Imagenes/General/trello.png");
     filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
     background-position: center;
     background-size: contain;
@@ -207,7 +201,7 @@ footer ul > li.trello::before{
 footer ul > li.reddit::before{
     content: "";
     display: inline-block;
-    background-image: url("imagenes/index/reddit1.png");
+    background-image: url("imagenes/General/reddit.png");
     filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
     background-position: center;
     background-size: contain;
@@ -219,7 +213,31 @@ footer ul > li.reddit::before{
 footer ul > li.github::before{
     content: "";
     display: inline-block;
-    background-image: url("Imagenes/index/github.png");
+    background-image: url("Imagenes/General/github.png");
+    filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+}
+footer ul > li.ig::before{
+    content: "";
+    display: inline-block;
+    background-image: url("Imagenes/General/ig\ \(1\).png  ");
+    filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+}
+footer ul > li.twitter::before{
+    content: "";
+    display: inline-block;
+    background-image: url("Imagenes/General/284eb1cd-3dc2-457d-a91d-c2faa4b89286.png");
     filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
     background-position: center;
     background-size: contain;
@@ -234,7 +252,7 @@ footer ul > li.github::before{
         transform: scale(1);
     }
     30%{
-        transform: scale(1.4);
+        transform: scale(1.7);
     }
     50%{
         transform: scale(0.9);
@@ -249,13 +267,14 @@ footer ul > li.github::before{
 
 
 /* =========================================
-!                   COLUMNAS
+!             INDEX: preview del juego
 ========================================= */
-.page-columns {
+.PreviewFotos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
+    gap: 10px;
+    margin:120px 10px;
 }
 
 .columna {
@@ -269,18 +288,19 @@ footer ul > li.github::before{
     transition: all 0.4s;
     align-items: center;
 }
-.page-columns > :nth-child(2) {
+.PreviewFotos > :nth-child(2) {
     grid-column: 2 / 4;
     grid-row: 1 / 3;
 }
-.columna>p {
+
+p {
     all: unset;
     font-size: 1.4em;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.columna>p>span {
+p>span {
     color: rgb(255, 211, 130);
 }
 
@@ -329,12 +349,12 @@ footer ul > li.github::before{
     color: whitesmoke;
     border: 2px solid rgb(60, 60, 60);
     outline: 3px solid rgb(15, 15, 15);
-    padding: 0px 26px;
-    font-size: 2em;
+    padding: 0px 20px;
+    font-size: 1.8em;
     cursor: pointer;
     transition: all 0.2s;
     width: 200px;
-    height: 50px;
+    height: auto;
     text-align: center;
 }
 .menu a:hover {
@@ -351,5 +371,26 @@ footer ul > li.github::before{
 
 
 /* =========================================
-BOTONES
+!              Banda Publi 
 ========================================= */
+.musica{
+    display:grid;
+    grid-template-columns: 2fr, 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+.musica div{
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #333;
+    padding: 20px;
+    color: whitesmoke;
+    overflow: clip;
+    align-items: center;
+}
+/* =================
+!      Descargar
+===================*/
+.descargar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
