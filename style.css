@@ -150,16 +150,17 @@ footer{
     justify-content: space-between ;
     background: rgba(20, 20, 20, 0.9);
     color:grey;
-    padding: 5px 0 20px 5px ;
+    padding: 13px 15px;
     margin-top: 40px;
     margin-left: 0;
     border-top: 1px solid rgb(255, 211, 130);
-    box-shadow: 0 0 10px rgb(255, 211, 130);
+    box-shadow: 0 0 75px rgb(255, 211, 130);
     width: 100%;
 }
+
 footer .redes{
     display:block;
-    margin-left: 200px;
+    margin-left: 0px;
 }
 footer h3{
     all: unset;
@@ -173,6 +174,7 @@ footer a{
 
 footer ul{
     list-style: none;
+    padding-top: 7px;
 }
 
 footer a:hover{
@@ -247,6 +249,42 @@ footer ul > li.youtube::before{
     content: "";
     display: inline-block;
     background-image: url("Imagenes/General/youtube.png");
+    filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+}
+footer ul > li.gmail::before{
+    content: "";
+    display: inline-block;
+    background-image: url("Imagenes/General/gmail.png");
+    filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+}
+footer ul > li.discord::before{
+    content: "";
+    display: inline-block;
+    background-image: url("Imagenes/General/discord.png");
+    filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+}
+footer ul > li.telegram::before{
+    content: "";
+    display: inline-block;
+    background-image: url("Imagenes/General/telegram.png");
     filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
     background-position: center;
     background-size: contain;
