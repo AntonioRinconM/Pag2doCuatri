@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>mindustry</title>
+        <title>Obtener mindustry</title>
         <link rel="icon" href="Imagenes/General/Logo.png">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body >
+    <body>
         <header>
             <div>
                 <a href="index.html"><img src="Imagenes/General/Logo.png" alt="logo"></a>
@@ -16,33 +16,25 @@
                 <a href="#footer">Redes</a>            
             </nav>
         </header> 
-        <div class="menu">
-            <div class="titulo">
-                    <img src="Imagenes/index/mindustry.jpg" alt="titulo">
+        <main class="beta">
+            <div class="tituloBeta ">
+                <h1>Unirse al testeo <span>BETA</span></h1>
             </div>
-            <div class="botones">
-                <a href="#footer">Redes</a>
-                <a href="adquirir.html">Obtener</a>
-            </div>
-        </div>     
-        <div class="PreviewFotos">
-            <div class="columna">
-                <p>Construye <span>fuertes defensas</span></p>
-                <img src="Imagenes/index/defensas.jpg" >
-            </div>
-            <div class="columna">
-                <p>Defiendete de <span>gigantescas oleadas</span> y captura <span>sectores</span><br>en servidores <span>multijugador</span></p>
-                <img src="Imagenes/index/defensa.png" alt="" >
-            </div>
-            <div class="columna">
-                <p><span>Explota </span>todos los <span>recursos</span></p>
-                <img src="Imagenes/index/recursos.png" alt="" >
-            </div>
-        </div>
-        <div class="musica">
-            <div><p>dksdljk</p></div>
-            <div></div>
-        </div>
+            <form class="participarbeta" action="">
+                <div class="selectbox">
+                    <select name="plataforma" required>
+                        <option value="">Seleccione su plataforma</option>
+                        <option value="android">Android(Google play)</option>
+                        <option value="ios">Apple acount</option>
+                        <option value="windows">Steam</option>
+                        <option value="itchio">Itch.io</option>
+                    </select>
+                </div>
+                <p>Inrgese su email</p><input type="email" name="email" required>
+                <p>Ingrese su contraseña</p><input type="password" name="pssword" required>
+                <button type="submit">Unirse a la beta</button>
+            </form>
+        </main>
         <footer id="footer">
                 <div >
                 <h3>Foros:</h3>
@@ -71,4 +63,4 @@
             </div>
         </footer>
     </body>
-</html>  
+</html>
