@@ -154,7 +154,7 @@ footer{
     margin-top: 40px;
     margin-left: 0;
     border-top: 1px solid rgb(255, 211, 130);
-    box-shadow: 0 0 75px rgb(255, 211, 130);
+    box-shadow: 0 0 30px rgb(255, 211, 130);
     width: 100%;
 }
 
@@ -200,7 +200,7 @@ footer ul > li.trello::before{
 footer ul > li.reddit::before{
     content: "";
     display: inline-block;
-    background-image: url("imagenes/General/reddit.png");
+    background-image: url("imagenes/General/reditblanco.png");
     filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
     background-position: center;
     background-size: contain;
@@ -500,27 +500,32 @@ footer ul > li.telegram::before{
     border: none;
     width: 70%;
     height: 100%;
-    position: absolute;
-    top: 50px;
-    right: 60px;
+    margin-top: 80px;
+}
+.fila:has(iframe.steam) .linea{
+    width: 5px;
+    height: 100%;
+    border-radius: 90px;
+    background-color: rgb(10, 70, 130);
+    filter: brightness(0) invert(1);
 
 }
+
 .fila > iframe.itchio{
     border: none;
     width: 70%;
     height: 60%;
-    position: absolute;
-    top: 50px;
-    right: 60px;
+    margin-bottom: 20px;
 }
 .fila > img{
     width: 20%;
     height: auto;
-    border-right: 2px solid rgb(250, 211, 130);
     margin: 0;
     padding: 0;
     transition: all 0.4s;
+    filter: brightness(0) invert(1);
 }
+/* ? Diseño COLUMNAS */
 .columna > div.botones{
     display: flex;
     gap: 10px;
