@@ -149,14 +149,15 @@ footer{
     display: flex;
     justify-content: space-between ;
     background: rgba(20, 20, 20, 0.9);
+    color:grey;
+    padding: 5px 0 20px 5px ;
+    margin-top: 40px;
+    margin-left: 0;
     border-top: 1px solid rgb(255, 211, 130);
-    padding: 5px;
-    height: auto;
-    color:whitesmoke;
     box-shadow: 0 0 10px rgb(255, 211, 130);
     width: 100%;
 }
-.redes{
+footer .redes{
     display:block;
     margin-left: 200px;
 }
@@ -169,11 +170,7 @@ footer a{
     all:unset;
     transition: all 0.3s;
 }
-footer {
-    width: 100%;
-    margin-left: 0;
-    color:grey;
-}
+
 footer ul{
     list-style: none;
 }
@@ -225,7 +222,7 @@ footer ul > li.github::before{
 footer ul > li.ig::before{
     content: "";
     display: inline-block;
-    background-image: url("Imagenes/General/ig\ \(1\).png  ");
+    background-image: url("Imagenes/General/ig.png");
     filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
     background-position: center;
     background-size: contain;
@@ -237,7 +234,19 @@ footer ul > li.ig::before{
 footer ul > li.twitter::before{
     content: "";
     display: inline-block;
-    background-image: url("Imagenes/General/284eb1cd-3dc2-457d-a91d-c2faa4b89286.png");
+    background-image: url("Imagenes/General/x.png");
+    filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+}
+footer ul > li.youtube::before{
+    content: "";
+    display: inline-block;
+    background-image: url("Imagenes/General/youtube.png");
     filter: brightness(0) saturate(100%) invert(41%) sepia(80%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(103%);
     background-position: center;
     background-size: contain;
@@ -265,63 +274,6 @@ footer ul > li.twitter::before{
     }
 }
 
-
-/* =========================================
-!             INDEX: preview del juego
-========================================= */
-.PreviewFotos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    margin:120px 10px;
-}
-
-.columna {
-    display: flex;
-    flex-direction: column;
-    background: rgba(20, 20, 20, 0.9);
-    border: 1px solid #333;
-    padding: 20px;
-    color: whitesmoke;
-    overflow: clip;
-    transition: all 0.4s;
-    align-items: center;
-}
-.PreviewFotos > :nth-child(2) {
-    grid-column: 2 / 4;
-    grid-row: 1 / 3;
-}
-
-p {
-    all: unset;
-    font-size: 1.4em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-p>span {
-    color: rgb(255, 211, 130);
-}
-
-.columna img {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    border-radius: 18px;
-    object-fit: cover;
-    transition: all 0.4s ;
-}
-.columna:hover {
-    border-color: rgb(255, 211, 130);
-    box-shadow: 0 0 15px rgb(255, 211, 130);
-}
-.columna:hover img {
-    transform: scale(1.01);
-}
-
-
 /* =========================================
 !               MENÚ (titulo y botones)
 ========================================= */
@@ -332,7 +284,7 @@ p>span {
     justify-content: space-between;
     align-items: center;
     height: 200px;
-    margin: 130px 0 90px 0;
+    margin: 130px 0 0 0;
 }
 .menu .titulo img{
     width: 100%;
@@ -371,6 +323,62 @@ p>span {
 
 
 /* =========================================
+!             preview del juego
+?          (index.html) 
+========================================= */
+.PreviewFotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin:120px 10px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #333;
+    padding: 20px;
+    color: whitesmoke;
+    overflow: clip;
+    transition: all 0.4s;
+    align-items: center;
+}
+.PreviewFotos > :nth-child(2) {
+    grid-area: 1 / 2 / 3 / 4;}
+
+.PreviewFotos p {
+    all: unset;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.PreviewFotos p>span {
+    color: rgb(255, 211, 130);
+}
+
+.columna img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 18px;
+    object-fit: cover;
+    transition: all 0.4s ;
+}
+.columna:hover {
+    border-color: rgb(255, 211, 130);
+    box-shadow: 0 0 15px rgb(255, 211, 130);
+}
+.columna:hover img {
+    transform: scale(1.01);
+}
+
+
+
+/* =========================================
 !              Banda Publi 
 ========================================= */
 .musica{
@@ -387,10 +395,50 @@ p>span {
     align-items: center;
 }
 /* =================
-!      Descargar
+!       TITULO DE DESCARGAS 
+        ?(adquirir.html)
+===================*/
+.tituloDescargas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+    color: whitesmoke;
+    margin-top: 120px;   
+}
+.tituloDescargas h1{
+    display: block;
+    position: relative;
+    font-size: 3em;
+    font-weight: lighter;
+    border-bottom: rgb(255, 211, 130) solid 3px;
+    padding-bottom: 10px;
+}
+.tituloDescargas h2{
+    font-weight:lighter;
+    font-size: 1em;
+}
+
+/* =================
+!       MENU DE DESCARGAS
+        ?(adquirir.html)
 ===================*/
 .descargar{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
+    margin: 120px 0 120px 0;
+    gap: 10px;
+}
+.descargar div{
+    background: rgba(20, 20, 20, 0.686);
+    border: 1px solid #333;
+    padding: 20px;
+    color: whitesmoke;
+    overflow: clip;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4em;
+    transition: all 0.4s;
 }
