@@ -576,8 +576,10 @@ main.beta{
     border: 1px solid #333;
     box-shadow: 0 0 6px rgb(255, 211, 130);
     color: whitesmoke;
-
-
+    border-radius: 20px ;
+}
+.participarbeta p{
+    font-size: 1.4em;
 }
 .participarbeta > .selectbox{
     position: relative;
@@ -616,7 +618,7 @@ main.beta{
     pointer-events: none;
 }
 .participarbeta input[type="password"],
-.participarbeta input[type="email"] {
+.participarbeta input[type="email"]{
     all: unset;
     width: 260px;
     padding: 10px 15px;
@@ -658,4 +660,22 @@ main.beta{
     background: #222;
     color: rgb(255, 211, 130);
     box-shadow: 0 0 15px rgb(255, 211, 130);
+}
+
+.participarbeta input[type="checkbox"]{
+    display: block;
+    opacity:0;
+}
+.participarbeta span{
+    display:inline-block;
+    background: rgba(30, 30, 30, 0.9);
+    border: 2px solid rgb(255, 211, 130);
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    position: relative;
+    border-radius: 10%;
+}
+.participarbeta span:has(input[type="checkbox"]:checked){
+    background-color: aliceblue;
 }
