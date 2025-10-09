@@ -484,6 +484,7 @@ footer ul > li.telegram::before{
     transition: all 0.4s;
     height: auto;
     position: relative;
+    border-radius: 10px;
 }
 
 .descargar > .fila{
@@ -500,15 +501,15 @@ footer ul > li.telegram::before{
     border: none;
     width: 70%;
     height: 100%;
-    margin-top: 80px;
+    margin-top: 10%;
 }
-.fila:has(iframe.steam) .linea{
-    width: 5px;
+.fila div.linea{
+    width: 2px;
     height: 100%;
-    border-radius: 90px;
+    border-radius: 0px;
     background-color: rgb(10, 70, 130);
     filter: brightness(0) invert(1);
-
+    transition: all 0.4;
 }
 
 .fila > iframe.itchio{
