@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html {
- scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 
@@ -573,7 +573,7 @@ main.beta{
     display: grid;
     grid-template-columns:1fr 2fr;
     grid-template-rows: 1fr;
-    margin: 120px 20px;
+    margin: 30vh 1vw;
     background-color: rgba(20, 20, 20, 0.6);
     border: rgb(42, 39, 39) 3px solid;
     border-radius: 10px;
@@ -585,9 +585,9 @@ main.beta{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap:6px;
+    gap:2vh;
     color: whitesmoke;
-    margin-top: 120px;   
+    margin-top: 10vh;
 }
 .tituloBeta h1{
     display: block;
@@ -604,8 +604,12 @@ main.beta{
     font-weight:lighter;
     font-size: 1em;
 }
+.tituloBeta > img{
+    width: 100%;
+    height: auto;
+}
 /* =================
-!       BETA TESTER NAJKSDHFJDJKFDHJK
+!       BETA TESTER FORM 
 ?       (beta.html)
 ===================*/
 .participarbeta{
@@ -613,9 +617,9 @@ main.beta{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    margin: 120px 80px;
-    padding: 20px;
+    gap: 6vh;
+    margin: 10vh 05vw;
+    padding: 10%;
     background-color: rgba(20, 20, 20, 0.9);
     border: 1px solid #333;
     box-shadow: 0 0 6px rgb(255, 211, 130);
