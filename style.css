@@ -138,10 +138,27 @@ header>nav a:hover::after {
     }
 }
 
+
+
+/* =========================================
+!                    MAIN
+========================================= */
+/*
+*   MAIN GENERAL
+*/
+main.general{
+
+}
+main.wiki{
+    display: flex;
+
+}
 /* =========================================
 !                   SIDEBAR
 ========================================= */
-
+aside{
+    background: yellow;
+}
 /* =========================================
 !                   FOOTER
 ========================================= */
@@ -727,3 +744,7 @@ main.beta{
 .participarbeta span:has(input[type="checkbox"]:checked){
     background-color: aliceblue;
 }
+
+/* 
+
+*/
