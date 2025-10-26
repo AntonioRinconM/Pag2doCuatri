@@ -1,0 +1,79 @@
+/* 
+?               INDEX HTML 
+*/
+
+/* =========================================
+!               MENÚ (titulo y botones)
+========================================= */
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin: 130px 0 0 0;
+}
+.menu .titulo img{
+    width: 100%;
+    height: auto;
+}
+.menu .CajaBotones{
+    display: flex;
+    gap: 15px;
+}
+
+/* =========================================
+!             preview del juego
+?          (index.html) 
+========================================= */
+.PreviewFotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin:120px 10px;
+}
+
+.PreviewFotos >.columna {
+    display: flex;
+    flex-direction: column;
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #333;
+    padding: 20px;
+    color: whitesmoke;
+    overflow: clip;
+    transition: all 0.4s;
+    align-items: center;
+}
+.PreviewFotos > :nth-child(2) {
+    grid-area: 1 / 2 / 3 / 4;}
+
+.PreviewFotos p {
+    all: unset;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.PreviewFotos p>span {
+    color: rgb(255, 211, 130);
+}
+
+.PreviewFotos > .columna img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 18px;
+    object-fit: cover;
+    transition: all 0.4s ;
+}
+.PreviewFotos .columna:hover {
+    border-color: rgb(255, 211, 130);
+    box-shadow: 0 0 15px rgb(255, 211, 130);
+}
+.PreviewFotos .columna:hover img {
+    transform: scale(1.01);
+}
+

@@ -1,0 +1,47 @@
+/*  ==========================
+!       Keyframes
+ ========================== */
+@keyframes iconoreboton{
+    0%{
+        transform: scale(1);
+    }
+    30%{
+        transform: scale(1.7);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    70%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* ==========================
+!        Botonones 
+==========================*/
+a.Boton{
+    all: unset;
+    background-color: rgb(25, 25, 25);
+    color: whitesmoke;
+    border: 2px solid rgb(60, 60, 60);
+    outline: 3px solid rgb(15, 15, 15);
+    padding: 0px 3vw;
+    font-size: 1.8em;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 200px;
+    height: auto;
+    text-align: center;
+}
+a.Boton:hover {
+    transform: scale(1.05);
+    border-color: rgb(255, 211, 130);
+    box-shadow: 0 0 15px rgb(255, 211, 130);
+}
+a.Boton:active {
+    background-color: rgb(20, 20, 20);
+    transform:
+        scale(0.97);
+}

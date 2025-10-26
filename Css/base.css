@@ -1,0 +1,42 @@
+/* =========================================
+!               General
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior:smooth;
+}
+
+
+/* =========================================
+!               FUENTES
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+@font-face {
+    font-family: Mindustry;
+    src: url('../Fonts/font_latin-webfont.724c3a88.woff2') format('woff2');
+}
+
+.mindustry {
+    font-family: "Mindustry", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.suse-mono {
+    font-family: "SUSE Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.electrolize {
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
