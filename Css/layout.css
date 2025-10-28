@@ -101,7 +101,7 @@ header>nav a:hover::after {
 !                   MAIN
 *            es el  main base que usan todas las paginas para
 *           separar la pag de el header. Si una pagina tiene un main especifico 
-*            va a estar en : "{nombre de pagina}.css"
+?           va a estar en : "{nombre de pagina}.css"
 ========================================= */
 main.general{
     margin-top: 80px;

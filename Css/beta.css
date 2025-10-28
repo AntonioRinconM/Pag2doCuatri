@@ -1,0 +1,162 @@
+/* ===========
+!  BETA 
+? (beta.html)
+=======*/
+main.beta{
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: 1fr;
+    margin: 30vh 1vw;
+    background-color: rgba(20, 20, 20, 0.6);
+    border: rgb(42, 39, 39) 3px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+/*?   TITULO          */
+.tituloBeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap:2vh;
+    color: whitesmoke;
+    margin-top: 10vh;
+}
+.tituloBeta h1{
+    display: block;
+    position: relative;
+    font-size: 3em;
+    font-weight: lighter;
+    border-bottom: rgb(255, 211, 130) solid 3px;
+    padding-bottom: 10px;
+}
+.tituloBeta h1>span{
+    color: rgb(255, 211, 130); 
+}
+.tituloBeta h2{
+    font-weight:lighter;
+    font-size: 1em;
+}
+.tituloBeta > img{
+    width: 100%;
+    height: auto;
+}
+/* =================
+!       BETA TESTER FORM 
+?       (beta.html)
+===================*/
+.participarbeta{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    margin: 10vh 05vw;
+    padding: 10%;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 1px solid #333;
+    box-shadow: 0 0 6px rgb(255, 211, 130);
+    color: whitesmoke;
+    border-radius: 20px ;
+}
+.participarbeta p{
+    font-size: 1.4em;
+}
+.participarbeta > .selectbox{
+    position: relative;
+    width: auto;
+    display: inline-block;
+}
+.participarbeta select {
+    all:unset;
+    width: 220px;
+    padding: 10px 40px 10px 15px;
+    font-size: 1.1em;
+    color: whitesmoke;
+    background: rgba(30, 30, 30, 0.9);
+    border: 2px solid rgb(255, 211, 130);
+    border-radius: 4px;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    width: 260px;
+    box-shadow: 0 0 8px rgba(255, 211, 130, 0.2);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.participarbeta select:focus {
+    border-color: #ffe082;
+    box-shadow: 0 0 12px rgb(255, 211, 130);
+}
+.participarbeta .selectbox::after {
+    content: "...";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: rgb(255, 211, 130);
+    font-size: 3em;
+    pointer-events: none;
+}
+.participarbeta input[type="password"],
+.participarbeta input[type="email"]{
+    all: unset;
+    width: 260px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    color: whitesmoke;
+    background: rgba(30, 30, 30, 0.9);
+    border: 2px solid rgb(255, 211, 130);
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(255, 211, 130, 0.2);
+    margin-bottom: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.participarbeta input[type="password"]:focus,
+.participarbeta input[type="email"]:focus {
+    border-color: rgb(255,211,130);
+    box-shadow: 0 0 12px rgb(255, 211, 130);
+}
+
+.participarbeta button,
+.participarbeta input[type="submit"] {
+    all: unset;
+    background: rgb(255, 211, 130);
+    color: #222;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(255, 211, 130, 0.2);
+    transition: all 0.35s ease-in-out;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid rgb(255, 211, 130);
+}
+
+.participarbeta button:hover,
+.participarbeta input[type="submit"]:hover {
+    background: #222;
+    color: rgb(255, 211, 130);
+    box-shadow: 0 0 15px rgb(255, 211, 130);
+}
+
+.participarbeta input[type="checkbox"]{
+    display: block;
+    opacity:0;
+}
+.participarbeta span{
+    display:inline-block;
+    background: rgba(30, 30, 30, 0.9);
+    border: 2px solid rgb(255, 211, 130);
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    position: relative;
+    border-radius: 10%;
+}
+.participarbeta span:has(input[type="checkbox"]:checked){
+    background-color: aliceblue;
+}

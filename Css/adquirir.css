@@ -1,0 +1,133 @@
+/* =================
+!       TITULO DE DESCARGAS 
+        ?(adquirir.html)
+===================*/
+.tituloDescargas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+    color: whitesmoke;
+    margin-top: 120px;   
+}
+.tituloDescargas h1{
+    display: block;
+    position: relative;
+    font-size: 3em;
+    font-weight: lighter;
+    border-bottom: rgb(255, 211, 130) solid 3px;
+    padding-bottom: 10px;
+}
+.tituloDescargas h2{
+    font-weight:lighter;
+    font-size: 1em;
+}
+
+/* =================
+!       MENU DE DESCARGAS
+?       (adquirir.html)
+===================*/
+/* ?    Diseño de la tabla */
+.descargar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin: 120px 20px ;
+    gap: 20px;
+}
+.descargar > .fila,
+.descargar > .columna{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(20, 20, 20, 0.686);
+    border: 1px solid #333;
+    padding: 20px;
+    color: whitesmoke;
+    overflow: clip;
+    align-items: center;
+    font-size: 1.4em;
+    transition: all 0.4s;
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.descargar > .fila{
+    flex-direction: row;
+    grid-column: span 2;
+}
+.descargar > .columna{
+    flex-direction: column;
+    grid-row : span 2;
+}
+
+/* ? Diseño especifico de las FILAS(steam e itchio) */
+.fila > iframe.steam{
+    border: none;
+    width: 70%;
+    height: 100%;
+    margin-top: 10%;
+}
+.fila div.linea{
+    width: 2px;
+    height: 100%;
+    border-radius: 0px;
+    background-color: rgb(10, 70, 130);
+    filter: brightness(0) invert(1);
+    transition: all 0.4;
+}
+
+.fila > iframe.itchio{
+    border: none;
+    width: 70%;
+    height: 60%;
+    margin-bottom: 20px;
+}
+.fila > img{
+    width: 20%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+    filter: brightness(0) invert(1);
+}
+/* ? Diseño COLUMNAS */
+.columna > div.botones{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.columna > div.apple{
+    padding: 15% 0%;
+}
+.columna > div.android{
+    padding: 10% 0;
+}
+.columna > div.botones a{
+    all: unset;
+    text-align: center;
+}
+.columna > div.botones a:has(img:hover){
+    cursor: pointer;
+}
+
+.columna > div.botones img{
+    width: 70%;
+    height: auto;
+}
+.columna div.linea{
+    width: 10px;
+    height: 190px;
+    border-radius: 90px;
+    background: rgb(190, 158, 100);
+}
+.columna > img{
+    width: 40%;
+    height: auto;
+    border-bottom: 2px solid rgb(255, 211, 130);
+    margin: 0;
+    padding: 0;
+}
