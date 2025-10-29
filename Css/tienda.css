@@ -1,15 +1,11 @@
-/* 
-!       FIELDSET DEL MENU
-*/
 .TituloMerch{
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:6px;
     color: whitesmoke;
-    margin-top: 120px;
-    margin-bottom: 30px;   
+    margin-top: 120px;   
 }
 .TituloMerch > h1{
     all:unset;
@@ -65,5 +61,8 @@ a.BotonMerch:active {
 MERCH
  */
 .Peluches{
-    display: 1;
+    display: block;
+}
+.carrusel{
+    background-color: saddlebrown;
 }
