@@ -36,62 +36,59 @@ main.changelog{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 100px 30px 20px 30px;
+    margin: 10vh 11.25vw;
     background: rgba(20, 20, 20, 0.9);
     border: 1px solid #333;
-    padding: 1px 1px 1px 1px;
+    border-radius: 6px;
+    padding: 20px 10px;
     color: whitesmoke;
     overflow: clip;
     transition: all 0.4s;
     align-items: center;
-    width: 70%;
+    width: 77.5vw;
+    gap: 20px;
     height: auto;
+}
+main.changelog > h2 {
+    font-weight: lighter;
+    font-size: 2em;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding: 0px 10px;
+    position: relative;
+}
+
+main.changelog > h2::before{
+    content: "<";
+    color: rgb(255, 211, 130);
+    font-size: 1em;
+    position: absolute;
+    left: -15px;
+}
+main.changelog > h2::after{
+    content: ">";
+    color: rgb(255, 211, 130);
+    font-size: 1em;
+    position: absolute;
+    left: 475px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(30, 30, 30, 0.9);
+    border: 1px solid #333;
+    padding: 20px;
+    color: whitesmoke;
+    overflow: clip;
+    transition: all 0.4s;
+    width: 70vw;
+    gap: 10px;
+    border-radius: 10px;
 }
 
 .columna:hover {
     box-shadow: 0 0 20px rgb(255, 211, 130);
     border: 1px solid rgb(255, 211, 130);
-}
-
-/* =================
-!       ESTILOS GENERALES
-===================*/
-
-body {
-    background-color: #121212;
-    font-family: 'Mindustry', Tahoma, Geneva, Verdana, sans-serif; /* Asegurando la fuente base */
-    color: whitesmoke;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    background: rgba(20, 20, 20, 0.9);
-    color: grey;
-    padding: 13px 15px;
-    margin-top: 0;
-    margin-left: 0;
-    border-top: 1px solid rgb(255, 211, 130);
-    box-shadow: 0 0 30px rgb(255, 211, 130);
-    width: 100%;
-    font-family: 'Mindustry', Tahoma, Geneva, Verdana, sans-serif; /* Fuente en el footer */
-}
-
-footer h3 {
-    all: unset;
-    font-size: 1.6em;
-    font-weight: 600;
-    font-family: 'Mindustry', Tahoma, Geneva, Verdana, sans-serif; /* Usamos la misma fuente */
-}
-footer a {
-    all: unset;
-    transition: all 0.3s;
-}
-footer ul {
-    list-style: none;
-    padding-top: 7px;
-}
-footer a:hover {
-    color: rgb(255, 211, 130);
-    cursor: pointer;
 }
