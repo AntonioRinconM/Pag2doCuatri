@@ -1,0 +1,97 @@
+/* =================
+!       TITULO DE CHANGELONG
+===================*/
+.tituloChangelog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    color: whitesmoke;
+    margin-top: 120px;
+}
+.tituloChangelog h1 {
+    display: block;
+    position: relative;
+    font-size: 3em;
+    font-weight: lighter;
+    border-bottom: rgb(255, 211, 130) solid 3px;
+    padding-bottom: 10px;
+    font-family: 'Mindustry', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tituloChangelog h2 {
+    display: block;
+    position: relative;
+    font-size: 1em;
+    font-weight: lighter;
+    font-family: 'Mindustry', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =================
+!       ACTUALIZACIONES
+===================*/
+
+
+main.changelog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 30px 20px 30px;
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #333;
+    padding: 1px 1px 1px 1px;
+    color: whitesmoke;
+    overflow: clip;
+    transition: all 0.4s;
+    align-items: center;
+    width: 70%;
+    height: auto;
+}
+
+.columna:hover {
+    box-shadow: 0 0 20px rgb(255, 211, 130);
+    border: 1px solid rgb(255, 211, 130);
+}
+
+/* =================
+!       ESTILOS GENERALES
+===================*/
+
+body {
+    background-color: #121212;
+    font-family: 'Mindustry', Tahoma, Geneva, Verdana, sans-serif; /* Asegurando la fuente base */
+    color: whitesmoke;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(20, 20, 20, 0.9);
+    color: grey;
+    padding: 13px 15px;
+    margin-top: 0;
+    margin-left: 0;
+    border-top: 1px solid rgb(255, 211, 130);
+    box-shadow: 0 0 30px rgb(255, 211, 130);
+    width: 100%;
+    font-family: 'Mindustry', Tahoma, Geneva, Verdana, sans-serif; /* Fuente en el footer */
+}
+
+footer h3 {
+    all: unset;
+    font-size: 1.6em;
+    font-weight: 600;
+    font-family: 'Mindustry', Tahoma, Geneva, Verdana, sans-serif; /* Usamos la misma fuente */
+}
+footer a {
+    all: unset;
+    transition: all 0.3s;
+}
+footer ul {
+    list-style: none;
+    padding-top: 7px;
+}
+footer a:hover {
+    color: rgb(255, 211, 130);
+    cursor: pointer;
+}
