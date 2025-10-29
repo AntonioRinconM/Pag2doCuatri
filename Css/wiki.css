@@ -1,0 +1,13 @@
+/* ===================
+!       MAIN
+===================*/
+main.wiki{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+aside{
+    background: yellow;
+    width: 30%;
+}

@@ -79,23 +79,6 @@ header>nav a:hover::after {
     border-radius: 20px;
 }
 
-@keyframes linearebotina {
-    0% {
-        transform: translateX(-50%) scaleX(0);
-    }
-
-    50% {
-        transform: translateX(-50%) scaleX(1.1);
-    }
-
-    70% {
-        transform: translateX(-50%) scaleX(0.9);
-    }
-
-    100% {
-        transform: translateX(-50%) scaleX(1);
-    }
-}
 
 /* =========================================
 !                   MAIN
@@ -106,6 +89,10 @@ header>nav a:hover::after {
 main.general{
     margin-top: 80px;
 }
+
+/* =========================================
+?     La side bar {aside} esta en wiki.css porque se usa solamente ahi
+========================================= */
 /* =========================================
 !                   FOOTER
 ========================================= */
@@ -115,7 +102,7 @@ footer{
     background: rgba(20, 20, 20, 0.9);
     color:grey;
     padding: 13px 15px;
-    margin-top: 40px;
+    margin-top: 0;
     margin-left: 0;
     border-top: 1px solid rgb(255, 211, 130);
     box-shadow: 0 0 30px rgb(255, 211, 130);
