@@ -92,3 +92,11 @@ main.changelog > h2::after{
     box-shadow: 0 0 20px rgb(255, 211, 130);
     border: 1px solid rgb(255, 211, 130);
 }
+
+.columna ul{
+    list-style-type: none;
+}
+
+.columna h2>span {
+    color: rgb(255, 211, 130);
+}
