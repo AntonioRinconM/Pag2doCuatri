@@ -73,7 +73,7 @@ main.changelog > h2::after{
     left: 475px;
 }
 
-.columna {
+main.changelog .bloque {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,15 +88,19 @@ main.changelog > h2::after{
     border-radius: 10px;
 }
 
-.columna:hover {
+main.changelog .bloque:hover {
     box-shadow: 0 0 20px rgb(255, 211, 130);
     border: 1px solid rgb(255, 211, 130);
 }
 
-.columna ul{
+main.changelog .bloque ul{
     list-style-type: none;
 }
 
-.columna h2>span {
+main.changelog .bloque h2>span {
     color: rgb(255, 211, 130);
 }
+
+main.changelog .bloque h2{
+    font-weight: lighter;
+} 
