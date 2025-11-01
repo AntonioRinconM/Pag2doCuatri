@@ -5,23 +5,34 @@ main.tienda{
 /* ========================
 !           CARRUSEL
 ============================== */
-.carrusel{
+.carousel {
     overflow: hidden;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 60vh;
 }
-.carrusel .movimiento{
+
+.slides {
     display: flex;
-    width: 300%;
-    animation: a 8s steps(3) infinite;
+    width: calc(90*3vw) ; 
+    animation: slideAnimation 12s infinite;
 }
-.carrusel .imagenes{
-    flex-shrink: 0;
+
+.slide {
+  flex-shrink: 0;
 }
-.carrusel img{
-    width: 100vw;
-    height: 70vh;
-/*  */}
-@keyframes a{
-    to{
-        transform: translateX(-300%);
-    }
+
+.slide img {
+  width: 90vw;
+  height: 90vh;
+  display: block;
+}
+
+/* Animación automática */
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-90vw); }
+    66% { transform: translateX(-180vw); }
+    99% {transform: translateX(calc(-270vw));}
 }
