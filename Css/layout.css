@@ -263,3 +263,23 @@ footer ul > li.telegram::before{
         transform: scale(1);
     }
 }
+footer a.subir {
+    all:unset;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0 0 5px black, 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;
+    transition: all .3s ease-in-out;
+    font-size: 1.5em;
+    text-transform: capitalize;
+
+}
+footer > a img{
+    width: 100%;
+}
+footer a.subir:hover {
+    color: rgb(255, 211, 130);
+    animation: subirpaarriba 0.4s forwards;
+}
