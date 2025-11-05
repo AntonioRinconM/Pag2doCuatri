@@ -70,8 +70,7 @@
     transition: all 0.4s ;
 }
 .PreviewFotos .columna:hover {
-    border-color: rgb(255, 211, 130);
-    box-shadow: 0 0 15px rgb(255, 211, 130);
+    box-shadow: 0 0 15px rgb(71, 70, 69);
 }
 .PreviewFotos .columna:hover img {
     transform: scale(1.01);
