@@ -142,13 +142,3 @@ main.changelog .bloque ul li strong{
 /* ====================
 !       TITULO IDESAS DE LA GENTE
 ============================== */
-.tituloAportes {
-    display: flex;
-    flex-direction: column;
-    background: url(../Imagenes/index/defensas.jpg);
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    color: whitesmoke;
-    margin-top: 80px;
-}
