@@ -57,23 +57,54 @@ main.changelog > h2 {
     padding: 0px 10px;
     position: relative;
 }
+main.changelog h2.anashe2 {
+    font-weight: lighter;
+    font-size: 2em;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding: 0px 10px;
+    position: relative;
+    border-bottom: rgb(255, 211, 130) solid 3px;
+}
 
-main.changelog > h2::before{
+main.changelog h2.actu {
+    display: block;
+    position: relative;
+    font-size: 1em;
+    font-weight: lighter;
+    font-family: 'Mindustry', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main.changelog h2.anashe::before{
     content: "<";
     color: rgb(255, 211, 130);
     font-size: 1em;
     position: absolute;
     left: -15px;
 }
-main.changelog > h2::after{
+main.changelog h2.anashe::after{
     content: ">";
     color: rgb(255, 211, 130);
     font-size: 1em;
     position: absolute;
     left: 475px;
 }
+main.changelog h2.anashe2::before{
+    content: "<";
+    color: rgb(255, 211, 130);
+    font-size: 1em;
+    position: absolute;
+    left: -15px;
+}
+main.changelog h2.anashe2::after{
+    content: ">";
+    color: rgb(255, 211, 130);
+    font-size: 1em;
+    position: absolute;
+    left: 450px;
+}
 
-.columna {
+main.changelog .bloque {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,15 +119,22 @@ main.changelog > h2::after{
     border-radius: 10px;
 }
 
-.columna:hover {
+main.changelog .bloque:hover {
     box-shadow: 0 0 20px rgb(255, 211, 130);
     border: 1px solid rgb(255, 211, 130);
 }
 
-.columna ul{
+main.changelog .bloque ul{
     list-style-type: none;
 }
 
-.columna h2>span {
+main.changelog .bloque h2>span {
     color: rgb(255, 211, 130);
+}
+
+main.changelog .bloque h2{
+    font-weight: lighter;
+} 
+main.changelog .bloque ul li strong{
+    text-transform: uppercase;
 }
