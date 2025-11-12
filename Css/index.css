@@ -91,3 +91,10 @@
 .PreviewFotos .columna:hover img {
     transform: scale(1.01);
 }
+/* =========================================
+!             preview del juego pero en video
+?          (index.html) 
+========================================= */
+.previewVideo{
+    
+}
