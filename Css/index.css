@@ -96,5 +96,6 @@
 ?          (index.html) 
 ========================================= */
 .previewVideo{
-    
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #333;
 }
