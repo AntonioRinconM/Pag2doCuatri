@@ -3,12 +3,12 @@ main.tienda{
     margin-bottom: 50px;
 }
 /* =========================================
-!         TÍTULO + CARRUSEL (sección)
+!         TÍTULO 
 ========================================= */
 .seccionTitulo {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: flex-start; 
     align-items: center;
     background: rgba(20, 20, 20, 0.9);
     border: 1px solid #333;
@@ -23,27 +23,66 @@ main.tienda{
     color: rgb(255, 211, 130);
 }
 
-.seccionTitulo .productos {
-  display:flex;
-  background: transparent;
-  justify-content: space-around;
-  padding-left: 70px;
-  align-items: center;
+.seccionTitulo .TextoAviso {
+    font-size: 1.5em;
+    width: 60%;
+    text-align: center;
+    color: lightgray;
 }
-.seccionTitulo .productos a {
-  display: inline-block;
-  text-decoration: none;
-  border: none;
+.seccionTitulo .TextoAviso a {
+    color: rgb(231, 174, 66);
+    text-decoration: underline;
+    text-transform: uppercase;
 }
-.seccionTitulo .productos a img {
-    width: 70%;
-    border-radius: 10px;
-    object-fit: cover;
+/* =========================================
+!               Productos
+========================================= */
+.productoEspecifico {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    background: rgba(20, 20, 20, 0.9);
     border: 1px solid #333;
-    transition: all .4s;
+    border-radius: 12px;
+    padding: 18px;
+    overflow: hidden; 
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.seccionTitulo .productos img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgb(71, 70, 69);
+.productoEspecifico h2 {
+    color: whitesmoke;
+    width: 40%;
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+.productoEspecifico .productos {
+    width: 100%;
+    overflow: scroll;
+}
+
+.productoEspecifico .productos::-webkit-scrollbar {
+    display: none;
+}
+.productoEspecifico .productos .track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 16s linear infinite alternate; 
+    width: max-content;
+}
+
+.productoEspecifico .productos img {
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    transition: all .3s ease-in-out;
+}
+.productoEspecifico .productos img:hover {
+    border: 7px solid #333;
+}
+
+.productoEspecifico .productos:hover .track {
+    animation-play-state: paused;
 }

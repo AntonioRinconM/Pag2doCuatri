@@ -10,6 +10,18 @@ html {
     scroll-behavior:smooth;
 }
 /* =========================================
+!               SCROLBARR
+========================================= */
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background: rgb(20,20,20);
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(255,210,140,0.6);
+    border-radius: 10px;
+}
+/* =========================================
 !               FUENTES
 ========================================= */
 @import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:wght@100..800&display=swap');
