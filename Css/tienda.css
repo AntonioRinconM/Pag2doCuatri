@@ -35,13 +35,62 @@ main.tienda{
     text-transform: uppercase;
 }
 /* =========================================
+!         PUNTOS DE VENTA
+========================================= */
+.puntosVenta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    margin: 40px 10px;
+    padding: 20px;
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #333;
+    border-radius: 12px;
+    color: whitesmoke;
+}
+.puntosVenta h2 {
+    font-size: 2em;
+    color: rgb(255, 211, 130);
+}
+.puntosVenta .lugares{
+    display: flex;
+    justify-content: center;
+}
+.puntosVenta .lugares div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 20px;
+    width: 30%;
+    height:fit-content;
+    overflow: hidden
+}
+.puntosVenta .lugares h3{
+    all:unset;
+    font-size: 1.5em;
+    color :whitesmoke;
+    text-decoration: underline rgb(231, 174, 66);
+}
+.puntosVenta .lugares div ul{
+    list-style-type: square;
+}
+
+.puntosVenta .lugares span{
+    color: #71b352;
+}
+/* =========================================
 !               Productos
 ========================================= */
 .productoEspecifico {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
+    gap:20px;
     background: rgba(20, 20, 20, 0.9);
     border: 1px solid #333;
     border-radius: 12px;
@@ -51,12 +100,18 @@ main.tienda{
     margin-bottom: 40px;
 }
 
-.productoEspecifico h2 {
+.productoEspecifico h4 {
     color: whitesmoke;
     width: 40%;
     font-size: 2em;
     margin-right: 20px;
 }
+.productoEspecifico h4 span {
+    color: rgb(231, 174, 66);
+    font-size: 2.3em;
+}
+
+
 
 .productoEspecifico .productos {
     width: 100%;
