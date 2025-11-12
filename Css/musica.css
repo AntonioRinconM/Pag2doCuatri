@@ -1,26 +1,6 @@
 /* =====================
 !       musica titulo?
 ===================== */
-/* =====================
-!       musica titulo?
-===================== */
-
-/* Variables and base tweaks */
-:root {
-    --bg-accent: linear-gradient(135deg, #0f1724 0%, #071026 60%);
-    --accent: #d3f57c;
-    --accent-dark: #A1C349;
-    --muted: rgba(255, 255, 255, 0.06);
-    --glass: rgba(255, 255, 255, 0.04);
-    --text: whitesmoke;
-    --shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
-    --radius: 14px;
-    --gap-large: clamp(28px, 6vw, 100px);
-    --gap-small: clamp(12px, 2.5vw, 28px);
-    --ff-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
-
-/* Container */
 .Musica {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -34,7 +14,6 @@
 }
 
 
-/* Title area */
 .Musica .musicaTitulo {
     grid-column: 1 / -1;
     display: flex;
@@ -61,25 +40,48 @@
 .Musica .musicaTitulo h2 {
     all: unset;
     font-size: 1.7em;
+    letter-spacing: .2rem;
     color: whitesmoke;
 }
 
 .Musica .musicaTitulo h2 a {
     color: #d3f57c;
     text-decoration: none;
-    background-image: linear-gradient(90deg, #d3f57c 0%, #d3f57c 100%);
-    background-size: 0% 2px;
-    background-repeat: no-repeat;
-    background-position: left 100%;
-    transition: all .18 ease-in-out;
+    position: relative;
     display: inline-block;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
+    transition: color .28s cubic-bezier(.2,.9,.3,1), transform .28s cubic-bezier(.2,.9,.3,1);
+    will-change: transform, color;
+}
+
+.Musica .musicaTitulo h2 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #d3f57c 0%, #b7e06b 50%, #A1C349 100%);
+    background-size: 200% 100%;
+    background-position: left center;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition:
+        transform .40s ease-in-out,
+        background-position .6s linear;
+    pointer-events: none;
 }
 
 .Musica .musicaTitulo h2 a:hover {
     color: #A1C349;
-    background-size: 100% 2px;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    text-shadow: 0 6px 18px rgba(161, 195, 73, 0.18);
+}
+
+.Musica .musicaTitulo h2 a:hover::after {
+    transform: scaleX(1);
+    background-position: right center;
 }
 
 .Musica .spotify {
@@ -152,23 +154,4 @@
 .Musica .labubu a:hover img {
     transform: scale(1.05) rotate(-1.90deg);
     box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
-}
-
-/* Responsiveness */
-@media (max-width: 900px) {
-    .Musica {
-        grid-template-columns: 1fr;
-        gap: clamp(18px, 6vw, 48px);
-        margin-top: 90px;
-        padding: 2.5rem 1.25rem;
-    }
-
-    .Musica .musicaTitulo::before,
-    .Musica .musicaTitulo::after {
-        width: 80px;
-    }
-
-    .Musica .musicaTitulo h1 {
-        animation-duration: 8s;
-    }
 }
