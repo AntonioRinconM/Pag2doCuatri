@@ -138,6 +138,10 @@ main.changelog .bloque h2{
 main.changelog .bloque ul li strong{
     text-transform: uppercase;
 }
+main.changelog .bloque ul li img{
+    width: 100px;
+    margin-top: 10px;
+}
 
 /* ====================
 !       TITULO IDESAS DE LA GENTE
